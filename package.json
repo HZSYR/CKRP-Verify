@@ -25,7 +25,7 @@
     "csurf": "^1.11.0",
     "bcrypt": "^5.1.1",
     "jsonwebtoken": "^9.0.2",
-    "xss-clean": "^0.1.4",
+    "xss": "^1.0.14",
     "hpp": "^0.2.3",
     "express-mongo-sanitize": "^2.2.0",
     "compression": "^1.7.4",
