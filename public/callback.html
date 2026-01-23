@@ -290,24 +290,131 @@
             canvas.height = window.innerHeight;
         });
 
-        // Simulate processing steps
-        setTimeout(() => {
-            const steps = document.querySelectorAll('.step');
-            steps[1].classList.remove('active');
-            steps[1].classList.add('completed');
-            steps[1].querySelector('.step-icon').textContent = '✓';
-            steps[2].classList.add('active');
-            steps[2].querySelector('.step-icon').textContent = '⟳';
-        }, 2000);
+        // Process Discord OAuth callback
+        async function processVerification() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            const error = urlParams.get('error');
 
-        setTimeout(() => {
-            const steps = document.querySelectorAll('.step');
-            steps[2].classList.remove('active');
-            steps[2].classList.add('completed');
-            steps[2].querySelector('.step-icon').textContent = '✓';
-            steps[3].classList.add('active');
-            steps[3].querySelector('.step-icon').textContent = '⟳';
-        }, 4000);
+            if (error) {
+                console.error('OAuth error:', error);
+                window.location.href = '/error.html';
+                return;
+            }
+
+            if (!code) {
+                console.error('No authorization code received');
+                window.location.href = '/error.html';
+                return;
+            }
+
+            try {
+                // Step 1: Discord OAuth2 Authorization - Complete
+                const steps = document.querySelectorAll('.step');
+                steps[0].classList.add('completed');
+                steps[0].querySelector('.step-icon').textContent = '✓';
+
+                // Step 2: Validating Email Address - Start
+                steps[1].classList.add('active');
+                steps[1].querySelector('.step-icon').textContent = '⟳';
+
+                // Exchange code for access token
+                const tokenResponse = await fetch('https://discord.com/api/oauth2/token', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        client_id: '1463846789646909616',
+                        client_secret: 'B7Ri7TRpaXMLFLOwKkDqTdXyZc9pULd9',
+                        grant_type: 'authorization_code',
+                        code: code,
+                        redirect_uri: 'https://ckrp-verify.vercel.app/callback'
+                    })
+                });
+
+                if (!tokenResponse.ok) {
+                    throw new Error('Failed to exchange code for token');
+                }
+
+                const tokenData = await tokenResponse.json();
+
+                // Step 2: Complete
+                setTimeout(() => {
+                    steps[1].classList.remove('active');
+                    steps[1].classList.add('completed');
+                    steps[1].querySelector('.step-icon').textContent = '✓';
+                    
+                    // Step 3: Assigning Role - Start
+                    steps[2].classList.add('active');
+                    steps[2].querySelector('.step-icon').textContent = '⟳';
+                }, 1500);
+
+                // Get user info
+                const userResponse = await fetch('https://discord.com/api/users/@me', {
+                    headers: {
+                        'Authorization': `Bearer ${tokenData.access_token}`
+                    }
+                });
+
+                if (!userResponse.ok) {
+                    throw new Error('Failed to get user info');
+                }
+
+                const userData = await userResponse.json();
+
+                // Call bot API to assign role
+                setTimeout(async () => {
+                    try {
+                        const roleResponse = await fetch('http://localhost:3001/api/verify', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer 9caa4f130d46b18c36b5f782ae08b87b6895b10c0f3bbc50e013ca9b7c5ae626`
+                            },
+                            body: JSON.stringify({
+                                userId: userData.id,
+                                username: userData.username,
+                                discriminator: userData.discriminator,
+                                email: userData.email,
+                                guildId: '1463219682013348000' // Your server ID
+                            })
+                        });
+
+                        // Step 3: Complete
+                        steps[2].classList.remove('active');
+                        steps[2].classList.add('completed');
+                        steps[2].querySelector('.step-icon').textContent = '✓';
+                        
+                        // Step 4: Logging Activity - Start
+                        steps[3].classList.add('active');
+                        steps[3].querySelector('.step-icon').textContent = '⟳';
+
+                        setTimeout(() => {
+                            steps[3].classList.remove('active');
+                            steps[3].classList.add('completed');
+                            steps[3].querySelector('.step-icon').textContent = '✓';
+                            
+                            // Redirect to success page
+                            setTimeout(() => {
+                                window.location.href = '/success.html';
+                            }, 1000);
+                        }, 2000);
+
+                    } catch (roleError) {
+                        console.error('Role assignment error:', roleError);
+                        window.location.href = '/error.html';
+                    }
+                }, 2500);
+
+            } catch (error) {
+                console.error('Verification error:', error);
+                window.location.href = '/error.html';
+            }
+        }
+
+        // Start verification process
+        processVerification();
     </script>
 </body>
 </html>
