@@ -1,18 +1,23 @@
 {
   "version": 2,
-  "functions": {
-    "server.js": {
-      "runtime": "@vercel/node@18.x"
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/favicon.svg",
-      "dest": "/public/favicon.svg"
+      "dest": "/favicon.svg"
     },
     {
-      "src": "/logo.png",
-      "dest": "/public/logo.png"
+      "src": "/logo.png", 
+      "dest": "/logo.png"
     },
     {
       "src": "/(.*\\.(html|css|js|png|jpg|jpeg|gif|svg|ico))",
