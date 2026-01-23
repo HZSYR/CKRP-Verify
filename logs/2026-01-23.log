@@ -1,0 +1,110 @@
+[2026-01-23T03:20:58.005Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T03:20:58.008Z] [INFO] Environment: production
+[2026-01-23T03:20:58.009Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T03:20:58.957Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T03:21:06.537Z] [INFO] ::1 - - [23/Jan/2026:03:21:06 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:21:06.565Z] [INFO] ::1 - - [23/Jan/2026:03:21:06 +0000] "GET /css/animations.css HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:21:06.606Z] [INFO] ::1 - - [23/Jan/2026:03:21:06 +0000] "GET /css/responsive.css HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:21:06.608Z] [INFO] ::1 - - [23/Jan/2026:03:21:06 +0000] "GET /js/particles.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:21:06.614Z] [INFO] ::1 - - [23/Jan/2026:03:21:06 +0000] "GET /js/animations.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:21:07.250Z] [INFO] ::1 - - [23/Jan/2026:03:21:07 +0000] "GET /favicon.ico HTTP/1.1" 404 43 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:23:33.509Z] [INFO] ::1 - - [23/Jan/2026:03:23:33 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:23:34.067Z] [INFO] ::1 - - [23/Jan/2026:03:23:34 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:23:34.244Z] [INFO] ::1 - - [23/Jan/2026:03:23:34 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:23:34.423Z] [INFO] ::1 - - [23/Jan/2026:03:23:34 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:23:37.922Z] [INFO] ::1 - - [23/Jan/2026:03:23:37 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:24:29.451Z] [INFO] ::1 - - [23/Jan/2026:03:24:29 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:27:02.420Z] [INFO] ::1 - - [23/Jan/2026:03:27:02 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:27:24.550Z] [INFO] SIGINT received, shutting down gracefully
+[2026-01-23T03:27:29.709Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T03:27:29.712Z] [INFO] Environment: production
+[2026-01-23T03:27:29.712Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T03:27:30.152Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T03:27:32.885Z] [INFO] ::1 - - [23/Jan/2026:03:27:32 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:30:06.006Z] [INFO] ::1 - - [23/Jan/2026:03:30:06 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:30:06.641Z] [INFO] ::1 - - [23/Jan/2026:03:30:06 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:30:07.266Z] [INFO] ::1 - - [23/Jan/2026:03:30:07 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:32:36.462Z] [INFO] ::1 - - [23/Jan/2026:03:32:36 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:32:37.123Z] [INFO] ::1 - - [23/Jan/2026:03:32:37 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:33:17.003Z] [INFO] ::1 - - [23/Jan/2026:03:33:17 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:34:17.393Z] [INFO] ::1 - - [23/Jan/2026:03:34:17 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:34:18.055Z] [INFO] ::1 - - [23/Jan/2026:03:34:18 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:34:41.003Z] [INFO] ::1 - - [23/Jan/2026:03:34:41 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:34:42.795Z] [INFO] Verify endpoint accessed
+{
+  "ip": "::1"
+}
+[2026-01-23T03:34:42.803Z] [INFO] ::1 - - [23/Jan/2026:03:34:42 +0000] "GET /verify HTTP/1.1" 302 217 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:50:21.945Z] [INFO] ::1 - - [23/Jan/2026:03:50:21 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:50:36.274Z] [INFO] SIGINT received, shutting down gracefully
+[2026-01-23T03:58:08.732Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T03:58:08.734Z] [INFO] Environment: production
+[2026-01-23T03:58:08.734Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T03:58:09.249Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T03:58:11.639Z] [INFO] ::1 - - [23/Jan/2026:03:58:11 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:58:11.691Z] [INFO] ::1 - - [23/Jan/2026:03:58:11 +0000] "GET /logo.png HTTP/1.1" 200 1578241 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:58:13.545Z] [INFO] ::1 - - [23/Jan/2026:03:58:13 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:58:13.810Z] [INFO] ::1 - - [23/Jan/2026:03:58:13 +0000] "GET /favicon.svg HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T03:59:59.523Z] [INFO] ::1 - - [23/Jan/2026:03:59:59 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:00:15.386Z] [INFO] ::1 - - [23/Jan/2026:04:00:15 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:00:40.569Z] [INFO] SIGINT received, shutting down gracefully
+[2026-01-23T04:05:08.954Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T04:05:08.969Z] [INFO] Environment: production
+[2026-01-23T04:05:08.970Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T04:05:11.504Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T04:05:12.598Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:05:12 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:05:12.935Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:05:12 +0000] "GET /logo.png HTTP/1.1" 200 1578241 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:05:13.226Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:05:13 +0000] "GET /favicon.svg HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:05:19.395Z] [INFO] Verify endpoint accessed
+{
+  "ip": "::ffff:127.0.0.1"
+}
+[2026-01-23T04:05:19.406Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:05:19 +0000] "GET /verify HTTP/1.1" 302 217 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:06:12.321Z] [INFO] SIGINT received, shutting down gracefully
+[2026-01-23T04:07:04.284Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T04:07:04.287Z] [INFO] Environment: production
+[2026-01-23T04:07:04.287Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T04:07:05.673Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T04:07:27.966Z] [INFO] ::1 - - [23/Jan/2026:04:07:27 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:07:28.049Z] [INFO] ::1 - - [23/Jan/2026:04:07:28 +0000] "GET /logo.png HTTP/1.1" 200 1578241 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:07:28.694Z] [INFO] ::1 - - [23/Jan/2026:04:07:28 +0000] "GET /favicon.svg HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:07:48.259Z] [INFO] ::1 - - [23/Jan/2026:04:07:48 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:08:19.077Z] [INFO] ::1 - - [23/Jan/2026:04:08:19 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:09:58.252Z] [INFO] ::1 - - [23/Jan/2026:04:09:58 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:10:37.690Z] [INFO] ::1 - - [23/Jan/2026:04:10:37 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:10:38.464Z] [INFO] ::1 - - [23/Jan/2026:04:10:38 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:10:50.249Z] [INFO] ::1 - - [23/Jan/2026:04:10:50 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:10:56.897Z] [INFO] ::1 - - [23/Jan/2026:04:10:56 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:11:08.713Z] [INFO] ::1 - - [23/Jan/2026:04:11:08 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:14:35.515Z] [INFO] ::1 - - [23/Jan/2026:04:14:35 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:16:07.458Z] [INFO] ::1 - - [23/Jan/2026:04:16:07 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:17:22.397Z] [INFO] ::1 - - [23/Jan/2026:04:17:22 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:19:46.179Z] [INFO] ::1 - - [23/Jan/2026:04:19:46 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:20:47.614Z] [INFO] ::1 - - [23/Jan/2026:04:20:47 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:22:27.849Z] [INFO] ::1 - - [23/Jan/2026:04:22:27 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:22:56.001Z] [INFO] ::1 - - [23/Jan/2026:04:22:56 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:22:56.827Z] [INFO] ::1 - - [23/Jan/2026:04:22:56 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:23:01.227Z] [INFO] SIGINT received, shutting down gracefully
+[2026-01-23T04:23:07.174Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T04:23:07.176Z] [INFO] Environment: production
+[2026-01-23T04:23:07.177Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T04:23:08.259Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T04:23:13.562Z] [INFO] Verify endpoint accessed
+{
+  "ip": "::1"
+}
+[2026-01-23T04:23:13.576Z] [INFO] ::1 - - [23/Jan/2026:04:23:13 +0000] "GET /verify HTTP/1.1" 302 217 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+[2026-01-23T04:23:52.418Z] [INFO] SIGINT received, shutting down gracefully
+[2026-01-23T04:26:36.213Z] [SUCCESS] Website server running on port 3000
+[2026-01-23T04:26:36.215Z] [INFO] Environment: production
+[2026-01-23T04:26:36.216Z] [INFO] Website URL: http://localhost:3000
+[2026-01-23T04:26:37.326Z] [SUCCESS] MongoDB connected successfully
+[2026-01-23T04:26:37.766Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:26:37 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:27:18.943Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:27:18 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:27:30.557Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:27:30 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:27:53.706Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:27:53 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:28:25.030Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:28:25 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:28:26.291Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:28:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:28:34.465Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:28:34 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:29:20.449Z] [INFO] ::ffff:127.0.0.1 - - [23/Jan/2026:04:29:20 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+[2026-01-23T04:33:48.540Z] [INFO] SIGINT received, shutting down gracefully

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKRP Verification</title>
+    <link rel="icon" type="image/png" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Canvas Background */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Main Container */
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        /* Glassmorphism Card */
+        .card {
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 2px solid rgba(0, 240, 255, 0.3);
+            box-shadow: 
+                0 8px 32px 0 rgba(0, 240, 255, 0.2),
+                0 0 40px rgba(0, 240, 255, 0.1),
+                inset 0 0 20px rgba(0, 240, 255, 0.05);
+            animation: cardGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes cardGlow {
+            0%, 100% {
+                box-shadow: 
+                    0 8px 32px 0 rgba(0, 240, 255, 0.2),
+                    0 0 40px rgba(0, 240, 255, 0.1),
+                    inset 0 0 20px rgba(0, 240, 255, 0.05);
+            }
+            50% {
+                box-shadow: 
+                    0 8px 32px 0 rgba(0, 240, 255, 0.4),
+                    0 0 60px rgba(0, 240, 255, 0.2),
+                    inset 0 0 30px rgba(0, 240, 255, 0.1);
+            }
+        }
+
+        /* Icon */
+        .icon {
+            font-size: 64px;
+            margin-bottom: 15px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Title */
+        .title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #ffffff;
+            text-shadow: 
+                0 0 10px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.4),
+                0 0 40px rgba(255, 255, 255, 0.3),
+                0 0 50px rgba(255, 255, 255, 0.2);
+            animation: whiteGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes whiteGlow {
+            0% {
+                text-shadow: 
+                    0 0 10px rgba(255, 255, 255, 0.8),
+                    0 0 20px rgba(255, 255, 255, 0.6),
+                    0 0 30px rgba(255, 255, 255, 0.4),
+                    0 0 40px rgba(255, 255, 255, 0.3),
+                    0 0 50px rgba(255, 255, 255, 0.2);
+            }
+            100% {
+                text-shadow: 
+                    0 0 15px rgba(255, 255, 255, 1),
+                    0 0 25px rgba(255, 255, 255, 0.8),
+                    0 0 35px rgba(255, 255, 255, 0.6),
+                    0 0 45px rgba(255, 255, 255, 0.4),
+                    0 0 60px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        @keyframes logoGlow {
+            0% {
+                box-shadow: 
+                    0 0 15px rgba(0, 240, 255, 0.5),
+                    0 0 30px rgba(0, 240, 255, 0.3),
+                    0 0 45px rgba(0, 240, 255, 0.2),
+                    0 0 60px rgba(0, 240, 255, 0.1);
+            }
+            50% {
+                box-shadow: 
+                    0 0 25px rgba(0, 240, 255, 0.7),
+                    0 0 40px rgba(0, 240, 255, 0.5),
+                    0 0 55px rgba(0, 240, 255, 0.3),
+                    0 0 75px rgba(0, 240, 255, 0.2);
+            }
+            100% {
+                box-shadow: 
+                    0 0 15px rgba(0, 240, 255, 0.5),
+                    0 0 30px rgba(0, 240, 255, 0.3),
+                    0 0 45px rgba(0, 240, 255, 0.2),
+                    0 0 60px rgba(0, 240, 255, 0.1);
+            }
+        }
+
+        /* Description */
+        .description {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Button */
+        .verify-button {
+            background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
+            color: #0a0a0a;
+            font-size: 24px;
+            font-weight: 700;
+            padding: 18px 60px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 0 20px rgba(0, 255, 65, 0.5),
+                0 0 40px rgba(0, 255, 65, 0.3),
+                inset 0 0 10px rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .verify-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .verify-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .verify-button:hover {
+            transform: scale(1.05);
+            box-shadow: 
+                0 0 40px rgba(0, 255, 65, 0.8),
+                0 0 80px rgba(0, 255, 65, 0.5),
+                inset 0 0 20px rgba(255, 255, 255, 0.3);
+            filter: brightness(1.2);
+        }
+
+        .verify-button:active {
+            transform: scale(0.98);
+        }
+
+        .button-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card {
+                padding: 40px 30px;
+            }
+
+            .title {
+                font-size: 28px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .verify-button {
+                font-size: 20px;
+                padding: 15px 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .icon {
+                font-size: 48px;
+            }
+
+            .verify-button {
+                font-size: 18px;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="/logo.png" alt="Lock Icon" style="width: 150px; height: 150px; object-fit: contain; box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.4), 0 0 60px rgba(0, 240, 255, 0.3), 0 0 80px rgba(0, 240, 255, 0.2); animation: logoGlow 3s ease-in-out infinite alternate;">
+            </div>
+            <h1 class="title">CKRP Verification</h1>
+            
+            <a href="/verify" class="verify-button" id="verifyBtn">
+                <span class="button-text" style="display: flex; align-items: center; justify-content: center;">
+                    <span class="material-icons" style="margin-right: 8px; font-size: 24px; vertical-align: middle;">verified</span>
+                    <span style="vertical-align: middle;">Verify</span>
+                </span>
+            </a>
+            <div class="footer">
+                Powered by Discord OAuth2
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Particle System
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        const particleCount = 100;
+        const colors = ['#00f0ff', '#ff006e', '#bd00ff', '#00ff41'];
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+                this.size = Math.random() * 2 + 1;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.shadowColor = this.color;
+                ctx.shadowBlur = 10;
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            }
+        }
+
+        // Initialize particles
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(0, 240, 255, ${1 - distance / 150})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            drawConnections();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Main functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const verifyBtn = document.getElementById('verifyBtn');
+            
+            if (verifyBtn) {
+                verifyBtn.addEventListener('click', function(e) {
+                    console.log('🚀 Redirecting to Discord OAuth2...');
+                    
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const guildId = urlParams.get('guild_id');
+                    
+                    if (guildId) {
+                        const verifyUrl = `/verify?guild_id=${guildId}`;
+                        window.location.href = verifyUrl;
+                    } else {
+                        window.location.href = '/verify';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
