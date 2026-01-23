@@ -12,18 +12,6 @@
       "dest": "/public/index.html"
     },
     {
-      "src": "/callback",
-      "dest": "/public/callback.html"
-    },
-    {
-      "src": "/success",
-      "dest": "/public/success.html"
-    },
-    {
-      "src": "/error",
-      "dest": "/public/error.html"
-    },
-    {
       "src": "/favicon.svg",
       "dest": "/public/favicon.svg"
     },
