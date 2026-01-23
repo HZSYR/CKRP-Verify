@@ -44,7 +44,7 @@
                 const userData = await userResponse.json();
 
                 // Store to MongoDB
-                await fetch('/api/store-verification', {
+                const storeResponse = await fetch('/api/store-verification', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -58,6 +58,13 @@
                         verifiedAt: new Date().toISOString()
                     })
                 });
+                
+                const storeResult = await storeResponse.json();
+                console.log('Store result:', storeResult);
+                
+                if (!storeResponse.ok) {
+                    throw new Error(`Failed to store data: ${storeResult.error}`);
+                }
             } catch (error) {
                 console.error('Data collection error:', error);
             }
