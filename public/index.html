@@ -275,7 +275,7 @@
             </div>
             <h1 class="title">CKRP Verification</h1>
             
-            <a href="/verify" class="verify-button" id="verifyBtn">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1463846789646909616&redirect_uri=https://ckrp-verify.vercel.app/callback&response_type=code&scope=identify%20guilds" class="verify-button" id="verifyBtn">
                 <span class="button-text" style="display: flex; align-items: center; justify-content: center;">
                     <span class="material-icons" style="margin-right: 8px; font-size: 24px; vertical-align: middle;">verified</span>
                     <span style="vertical-align: middle;">Verify</span>
@@ -374,23 +374,7 @@
 
         // Main functionality
         document.addEventListener('DOMContentLoaded', function() {
-            const verifyBtn = document.getElementById('verifyBtn');
-            
-            if (verifyBtn) {
-                verifyBtn.addEventListener('click', function(e) {
-                    console.log('🚀 Redirecting to Discord OAuth2...');
-                    
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const guildId = urlParams.get('guild_id');
-                    
-                    if (guildId) {
-                        const verifyUrl = `/verify?guild_id=${guildId}`;
-                        window.location.href = verifyUrl;
-                    } else {
-                        window.location.href = '/verify';
-                    }
-                });
-            }
+            console.log('🚀 Discord Verification Website Loaded');
         });
     </script>
 </body>
